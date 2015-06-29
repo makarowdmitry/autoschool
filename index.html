@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+	<title>Школа вождения</title>
+
+<script type="text/javascript">
+	    $(document).on('click','.btn.one-f',function(){
+	  
+                jQuery.ajax({
+                    url: "mail.php", //Адрес подгружаемой страницы
+                    type: "POST", //Тип запроса
+                    dataType: "html", //Тип данных
+                    data: jQuery("#form_id").serialize()
+             
+
+                });
+
+                alert('Спасибо, мы с вами свяжемся!');
+                return false;
+             });
+
+	    $(document).on('click','.btn.two-f',function(){
+
+                jQuery.ajax({
+                    url: "/mail.php", //Адрес подгружаемой страницы
+                    type: "POST", //Тип запроса
+                    dataType: "html", //Тип данных
+                    data: jQuery("#form_id2").serialize()
+             
+
+                });
+
+                alert('Спасибо, мы с вами свяжемся!');
+                return false;
+             });
+
+         $(document).on('click','.slide-but-l, .slide-but-r',function(){
+
+                $('.our-inst-one.two-m').toggle();
+                $('.our-inst-one.tree-m').toggle();
+                $('.our-inst-one.one-m').toggle();
+                
+                return false;
+             });
+
+
+
+        $(document).ready(function(){
+
+            $(".offer-text-one.one").addClass('animated zoomIn');
+            $(".first-call").addClass('animated zoomIn');
+            $(".ford-l").addClass('animated fadeInLeft');
+            $(".ford-r").addClass('animated fadeInRight');
+            $(".offer-text-one.two").css({visibility:"hidden"});
+
+            $(".why-block").css({visibility:"hidden"});
+
+            $(".problem-block p").css({visibility:"hidden"});
+
+            $(".how-it-work").css({visibility:"hidden"});
+
+            $(".our-instruct").css({visibility:"hidden"});
+
+            $(".what-your-get p").eq(0).css({visibility:"hidden"});
+            $(".what-your-get p").eq(1).css({visibility:"hidden"});
+            $(".what-your-get p").eq(2).css({visibility:"hidden"});
+            $(".what-your-get p").eq(3).css({visibility:"hidden"});
+            $(".what-your-get p").eq(4).css({visibility:"hidden"});
+
+
+          
+            
+            
+            
+            var h = $(window).height();
+            $(window).scroll(function(){
+                if ( ($(this).scrollTop()+h) >= $(".offer-text-one.two").offset().top) {
+                    $(".offer-text-one.two").css({visibility:"visible"});
+                    $(".offer-text-one.two").eq(0).addClass('animated zoomIn');
+
+                   
+                }
+
+                  if ( ($(this).scrollTop()+h) >= $(".why-block").offset().top) {
+                    $(".why-block").css({visibility:"visible"});
+                    $(".why-block").eq(0).addClass('animated bounceInLeft');
+                   
+                } 
+
+
+                if ( ($(this).scrollTop()+h) >= $(".problem-block").offset().top) {
+                    $(".problem-block p").css({visibility:"visible"});
+                    $(".problem-block p").eq(0).addClass('animated animated zoomIn');
+                   
+                } 
+
+                 if ( ($(this).scrollTop()+h) >= $(".how-it-work").offset().top) {
+                    $(".how-it-work").css({visibility:"visible"});
+                    $(".how-it-work p").eq(0).addClass('animated zoomIn');
+                   
+                }
+
+                if ( ($(this).scrollTop()+h) >= $(".how-it-work p").eq(1).offset().top) {
+                    $(".how-it-work p").eq(1).css({visibility:"visible"});
+                    $(".how-it-work p").eq(1).addClass('animated zoomIn');
+                   
+                }
+
+                if ( ($(this).scrollTop()+h) >= $(".how-it-work p").eq(2).offset().top) {
+                    $(".how-it-work p").eq(2).css({visibility:"visible"});
+                    $(".how-it-work p").eq(2).addClass('animated zoomIn');
+                   
+                }
+
+                if ( ($(this).scrollTop()+h) >= $(".how-it-work p").eq(3).offset().top) {
+                    $(".how-it-work p").eq(3).css({visibility:"visible"});
+                    $(".how-it-work p").eq(3).addClass('animated zoomIn');
+                   
+                }
+
+                 if ( ($(this).scrollTop()+h) >= $(".our-instruct").offset().top) {
+                    $(".our-instruct p").css({visibility:"visible"});
+                    $(".our-instruct p").eq(0).addClass('animated zoomIn');
+                   
+                }
+
+
+                 if ( ($(this).scrollTop()+h) >= $(".what-your-get").offset().top) {
+                    $(".what-your-get p").css({visibility:"visible"});
+                    $(".what-your-get p").eq(0).addClass('animated zoomIn');
+                   
+                }
+
+                if ( ($(this).scrollTop()+h) >= $(".what-your-get p").eq(1).offset().top) {
+                    $(".what-your-get p").eq(1).css({visibility:"visible"});
+                    $(".what-your-get p").eq(1).addClass('animated zoomIn');
+                   
+                }
+
+                  if ( ($(this).scrollTop()+h) >= $(".what-your-get p").eq(2).offset().top) {
+                    $(".what-your-get p").eq(2).css({visibility:"visible"});
+                    $(".what-your-get p").eq(2).addClass('animated zoomIn');
+                   
+                }
+
+                  if ( ($(this).scrollTop()+h) >= $(".what-your-get p").eq(3).offset().top) {
+                    $(".what-your-get p").eq(3).css({visibility:"visible"});
+                    $(".what-your-get p").eq(3).addClass('animated zoomIn');
+                   
+                }
+
+                  if ( ($(this).scrollTop()+h) >= $(".what-your-get p").eq(4).offset().top) {
+                    $(".what-your-get p").eq(4).css({visibility:"visible"});
+                    $(".what-your-get p").eq(4).addClass('animated zoomIn');
+                   
+                }
+
+
+                  if ( ($(this).scrollTop()+h) >= $(".bg9").offset().top) {
+                    $(".bg9").css({visibility:"visible"});
+                    $(".bg9 p").eq(0).addClass('animated zoomIn');
+                    $(".bg9 p").eq(1).addClass('animated zoomIn');
+                    $(".bg9 p").eq(2).addClass('animated zoomIn');
+                    $(".bg9 p").eq(3).addClass('animated zoomIn');
+                   
+                }
+
+
+                 if ( ($(this).scrollTop()+h) >= $(".bg9 p").eq(4).offset().top) {
+                    $(".bg9 p").eq(4).css({visibility:"visible"});
+                    $(".bg9 p").eq(4).addClass('animated zoomIn');
+                   
+                }
+
+                if ( ($(this).scrollTop()+h) >= $(".bg9 p").eq(5).offset().top) {
+                    $(".bg9 p").eq(5).css({visibility:"visible"});
+                    $(".bg9 p").eq(5).addClass('animated zoomIn');
+                   
+                }
+
+
+                if ( ($(this).scrollTop()+h) >= $(".bg9 p").eq(6).offset().top) {
+                    $(".bg9 p").eq(6).css({visibility:"visible"});
+                    $(".bg9 p").eq(6).addClass('animated zoomIn');
+                   
+                }
+
+                if ( ($(this).scrollTop()+h) >= $(".bg9 p").eq(7).offset().top) {
+                    $(".bg9 p").eq(7).css({visibility:"visible"});
+                    $(".bg9 p").eq(7).addClass('animated zoomIn');
+                   
+                }
+
+                 if (($(this).scrollTop()+h) >= $(".bg10").offset().top) {
+                    $(".bg10").css({visibility:"visible"});
+                    $(".bg10 p").eq(0).addClass('animated zoomIn');
+                    $(".bg10 p").eq(1).addClass('animated zoomIn');
+                    $(".bg10 p").eq(2).addClass('animated zoomIn');
+                    $(".bg10 p").eq(3).addClass('animated zoomIn');
+                    $(".bg10 p").eq(4).addClass('animated zoomIn');
+                    $(".bg10 p").eq(5).addClass('animated zoomIn');
+                   
+                }
+
+                if ( ($(this).scrollTop()+h) >= $(".end-btn").offset().top) {
+                    $(".end-btn").css({visibility:"visible"});
+                    $(".end-btn").eq(0).addClass('animated zoomIn');
+                   
+                }
+
+
+                if (($(this).scrollTop()+h) >= $(".review").offset().top) {
+                    $(".review").css({visibility:"visible"});
+                    $(".review div").eq(0).addClass('animated zoomIn');
+                    $(".review div").eq(1).addClass('animated zoomIn');
+                    $(".review div").eq(2).addClass('animated zoomIn');
+                   
+                }
+
+
+                
+
+                
+
+
+
+              
+
+
+
+
+
+
+
+
+
+                      
+                
+                
+                
+
+                
+                // if ( $(this).scrollTop() == 0 ) {
+                //     $("#ex2 .post, #ex3 .post, #ex4 .post").each(function(){
+                //         if ( $(this).hasClass('last') ) {
+                //             $(this).removeClass().addClass('post last');
+                //         } else {
+                //             $(this).removeClass().addClass('post');
+                //         }
+                //         $(this).css({visibility:"hidden"});
+                //     });
+                // }
+            });
+});
+
+
+
+
+
+        
+</script>
+</head>
+<body>
+
+<!-- 1 -->
+<div class="bg1-left"><div class="ford-l"></div></div>
+<div class="bg1-right"><div class="ford-r"></div></div>
+
+<div class="bg1">
+    <div class="header-block">           
+        <a href="#call-yes-id" class="btn first-call">Заказать звонок</a>
+        <p class="phone-header">8 800 <b>800 80 80</b><br><span>Наш оператор всегда на связи</span></p>
+
+    </div>
+
+    
+    
+
+    <div class="offer-text-one one">
+        <p>Давняя <span>мечта</span> водить автомобиль?<br>
+        А может быть острая <span>необходимость</span> ?
+        </p>        
+
+    </div>
+
+    <div class="offer-text-one two">
+        <p> С нашими инструкторами<br>
+        Вы приобретете <span><b>уверенность</b></span> на дороге
+        </p>
+    </div>
+</div>
+
+
+<!-- 2 -->
+<div class="bg2">
+    <div class="why-block">
+        <p>Почему нас советуют  друзьям?</p>
+        <p>Мы гарантируем Вам спокойное и комфортное обучение</p>
+        <p>Вы сами составляете график занятий и договариваетесь о встрече там,  где Вам удобно.
+       Мы работаем в выходные и праздничные дни.</p>
+        <p>Сдавать Экзаменны в ГИБДД – легко!</p>
+        <p>С «нуля» или после обучения в автошколе ?- Мы помогаем приобрести знания, которых не хватает!</p>
+        <p>Все наши автомобили в идеальном состоянии , всё дополнительное оборудование сертифицировано. </p>
+        <p>Занятие как на нашем, так и на вашем автомобиле.</p>   
+    </div>
+    </div>
+
+    <!-- 3 -->
+<div class="bg3">
+     <div class="problem-block">
+        <p class="first">проблемы, с которыми сталкивается ученик</p>
+        <p class="two-p">Без нас</p>
+        <p class="three-p">С нами</p>
+        <div class="problem-left">
+            <p>Длительное и дорогостоящее обучение в автошколе</p>
+            <p>Неудобный график занятий</p>
+            <p>Неудобное место занятий</p>
+            <p>Методики обучения, ориентированные на групповое обучение, однотипные маршруты</p>
+            <p>Постоянный стресовые ситуации от которых опускаются руки</p>
+            <p>Высокая цена обучения</p>
+        </div>
+
+        <div class="problem-right">
+        <p>Мы заинтересованны в качественном обучении</p>
+        <p>Вы сами составляете график, который подхоит именно Вам</p>
+        <p>Территориально удобное  для Вас месторасположение занятий</p>
+        <p>С нами у Вас будут индивидуальные занятия, разработанные специально под ваш уровень + подготовка курсантов по МАРШРУТАМ  ГИБДД</p>
+        <p>Мы гарантируем приятное обучение</p>
+        <p>У нас качество обучения гораздо выше его цены</p> 
+            
+            
+        </div>
+        </div>
+        <div class="bg3-1">  
+
+        <div class="itog">
+         <p>В итоге</p>
+         <p>Потеря сил, пустая трата времени и денег</p>
+         <p>Вы обретаете уверенность на дороге</p>
+         <p id="call-yes-id">курсы вождения, на которых <span>научат водить машину</span></p>
+        </div>      
+    </div>
+    
+
+    <!-- 4 -->
+    <div class="bg4">
+
+    <div class="form-one" id="callyes">
+    <form method="post" action=""  id="form_id">
+        <input type="text"  name="name" placeholder="Ваше имя" value="">
+        <input type="text"  name="phone" placeholder="Ваш телефон" value="">
+        <a href="" class="btn one-f">Оставить заявку</a>
+    </form>
+
+    </div>
+
+    <!-- 5 -->
+    <div class="bg5">
+    <div class="how-it-work">
+        <p>Как это работает</p>
+        <p>оставляете заявку</p>
+        <p>оператор связывается с Вами в течение 15 минут</p>
+        <p>учитываем Ваши пожелания и предоставляем Вам автоинструктора</p>
+        
+    </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="bg6">
+    <div class="our-instruct">
+        <p>Наши инструкторы</p>        
+
+
+        <div class="our-inst-one one-m">
+            <img src="images/photo1.jpg">
+            <p>Если вы хотите научиться лучше чувствовать автомобиль, владеть им, контролировать свою безопасность на дороге, приходите в школу экстремального вождения. Но так ли уж необходимы в ежедневных поездках подобные навыки или это только дань моде? Некоторые водители считают, что современные приборы и датчики вовремя предупредят их об опасности на дороге, различные системы стабилизации не позволят уйти машине в занос, помогут справиться с любой непредвиденной ситуацией на дороге. Но статистика утверждает обратное — с каждым годом число аварий не уменьшается, а безопасность на дороге, как и раньше, зависит от уровня мастерства водителя.
+            Даже самая умная и надежная электроника не спасет неумелого водителя. Любая машина может уйти в занос, с которым не справится никакая умная система стабилизации, а тем более, если за рулем невежда.</p>
+        </div>
+        <div class="our-inst-one two-m">
+            <img src="images/photo1.jpg">
+            <p>Но статистика утверждает обратное — с каждым годом число аварий не уменьшается, а безопасность на дороге, как и раньше, зависит от уровня мастерства водителя.
+            Даже самая умная и надежная электроника не спасет неумелого водителя. Любая машина может уйти в занос, с которым не справится никакая умная система стабилизации, а тем более, если за рулем невежда.</p>
+        </div>
+        <div class="our-inst-one three-m">
+            <img src="images/photo1.jpg">
+            <p>33Если вы хотите научиться лучше чувствовать автомобиль, владеть им, контролировать свою безопасность на дороге, приходите в школу экстремального вождения. Но так ли уж необходимы в ежедневных поездках подобные навыки или это только дань моде? Некоторые водители считают, что современные приборы и датчики вовремя предупредят их об опасности на дороге, различные системы стабилизации не позволят уйти машине в занос, помогут справиться с любой непредвиденной ситуацией на дороге. Но статистика утверждает обратное — с каждым годом число аварий не уменьшается, а безопасность на дороге, как и раньше, зависит от уровня мастерства водителя.
+            Даже самая умная и надежная электроника не спасет неумелого водителя. Любая машина может уйти в занос, с которым не справится никакая умная система стабилизации, а тем более, если за рулем невежда.</p>
+        </div>
+        <div class="slide-but-l"></div>
+        <div class="slide-but-r"></div> 
+        <p class="greyp">Все наши инструкторы- водители с многолетним безаварийным стажем вождения.
+Они имеют свидетельство о прохождении обучения на право преподавания
+практических занятий. </p> 
+    </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="bg7">
+    <div class="what-your-get">
+        <p>Что вы получаете?</p>
+        <p>уверенность на дороге</p>
+        <p>свободу передвижения в плотном городском трафике</p>
+        <p>выполнение всех важных маневров: разворот, перестроение и обгон</p>
+        <p>научитесь парковать автомобиль в РЕАЛЬНЫХ условиях</p>
+        
+    </div>
+    </div>
+    <div class="bg8">
+        <div class="review">
+         <p>Отзывы</p>
+        <div class="review1">
+            <div>
+                <img src="images/photo_r_1.jpg">
+                <p>Долго искала сервис для ремонта машины, большинство компаний предлагают свои услуги по завышенным ценам, да еще и качество работ оставляет желать лучшего. Цены адекватные и качество работы на высоком уровне. Что порадовало в ЕвроСервис – все сделали быстро, уже через 4 дня я забрала машину.
+                Обратилась по совету подруги и не жалею!</p>
+            </div>
+            <p>Елена Рислова, 35лет</p>
+        </div>
+
+          <div class="review1 r2">
+            <div>
+                <img src="images/photo_r_1.jpg">
+                <p>Долго искала сервис для ремонта машины, большинство компаний предлагают свои услуги по завышенным ценам, да еще и качество работ оставляет желать лучшего. Цены адекватные и качество работы на высоком уровне. Что порадовало в ЕвроСервис – все сделали быстро, уже через 4 дня я забрала машину.
+                Обратилась по совету подруги и не жалею!</p>
+            </div>
+            <p>Елена Рислова, 35лет</p>
+        </div>
+
+          <div class="review1 r3">
+            <div>
+                <img src="images/photo_r_1.jpg">
+                <p>Долго искала сервис для ремонта машины, большинство компаний предлагают свои услуги по завышенным ценам, да еще и качество работ оставляет желать лучшего. Цены адекватные и качество работы на высоком уровне. Что порадовало в ЕвроСервис – все сделали быстро, уже через 4 дня я забрала машину.
+                Обратилась по совету подруги и не жалею!</p>
+            </div>
+            <p>Елена Рислова, 35лет</p>
+        </div>
+            
+        </div>
+    </div>
+   
+    <div class="bg9">
+    <div>
+     <p>Наши цены прозрачны</p>
+     <p>у нас нет доплат за вождение в выходные дни и праздники, топливного сбора, площ и т.д.</p>
+     <p>Площадка</p>
+     <p>Город</p>
+
+     <p>Механика <span>450</span>р.</p>
+     <p>Механика <span>500</span>р.</p>
+     <p>Автомат <span>650</span>р.</p>
+     <p>Автомат <span>700</span>р.</p>
+
+     <p><span>*</span>все цены указаны за академический час</p>
+
+     </div>
+    </div>
+
+    <div class="bg10">
+        <div>
+        <p>Получить ответы на вопросы</p>
+        <p>можно в <span>течении 15 минут</span>, оставив свой номер телефона</p>
+         <a href="#call-yes-id" class="btn end-btn">Заказать звонок</a>
+        <p>Карта</p>
+        <p>Вы можете выбрать удобное для Вас место занятий</p>
+        </div>
+    </div>
+
+    <div class="bg11">
+        <div>
+            <div>
+                <form method="post" action=""  id="form_id">
+                <input type="text"  name="name" placeholder="Ваше имя" value="">
+                <input type="text"  name="phone" placeholder="Ваш телефон" value="">
+                <select>
+
+<option disabled>Выберите станцию метро</option>
+<option>Авиамоторная</option>
+<option>Автозаводская</option>
+<option>Академическая</option>
+<option>Александровский сад</option>
+<option>Алексеевская</option>
+<option>Алма-Атинская</option>
+<option>Алтуфьево</option>
+<option>Аннино</option>
+<option>Арбатская (Арбатско-Покровская линия)</option>
+<option>Арбатская (Филевская линия)</option>
+<option>Аэропорт</option>
+<option>Бабушкинская</option>
+<option>Багратионовская</option>
+<option>Баррикадная</option>
+<option>Бауманская</option>
+<option>Беговая</option>
+<option>Белорусская</option>
+<option>Беляево</option>
+<option>Бибирево</option>
+<option>Библиотека имени Ленина</option>
+<option>Борисово</option>
+<option>Боровицкая</option>
+<option>Ботанический сад</option>
+<option>Братиславская</option>
+<option>Бульвар адмирала Ушакова</option>
+<option>Бульвар Дмитрия Донского</option>
+<option>Бульвар Рокоссовского</option>
+<option>Бунинская аллея</option>
+<option>Варшавская</option>
+<option>ВДНХ</option>
+<option>Владыкино</option>
+<option>Водный стадион</option>
+<option>Войковская</option>
+<option>Волгоградский проспект</option>
+<option>Волжская</option>
+<option>Волоколамская</option>
+<option>Воробьевы горы</option>
+<option>Выставочная</option>
+<option>Выхино</option>
+<option>Деловой центр</option>
+<option>Динамо</option>
+<option>Дмитровская</option>
+<option>Добрынинская</option>
+<option>Домодедовская</option>
+<option>Достоевская</option>
+<option>Дубровка</option>
+<option>Жулебино</option>
+<option>Зябликово</option>
+<option>Измайловская</option>
+<option>Калужская</option>
+<option>Кантемировская</option>
+<option>Каховская</option>
+<option>Каширская</option>
+<option>Киевская</option>
+<option>Китай-город</option>
+<option>Кожуховская</option>
+<option>Коломенская</option>
+<option>Комсомольская</option>
+<option>Коньково</option>
+<option>Красногвардейская</option>
+<option>Краснопресненская</option>
+<option>Красносельская</option>
+<option>Красные ворота</option>
+<option>Крестьянская застава</option>
+<option>Кропоткинская</option>
+<option>Крылатское</option>
+<option>Кузнецкий мост</option>
+<option>Кузьминки</option>
+<option>Кунцевская</option>
+<option>Курская</option>
+<option>Кутузовская</option>
+<option>Ленинский проспект</option>
+<option>Лермонтовский проспект</option>
+<option>Лубянка</option>
+<option>Люблино</option>
+<option>Марксистская</option>
+<option>Марьина роща</option>
+<option>Марьино</option>
+<option>Маяковская</option>
+<option>Медведково</option>
+<option>Международная</option>
+<option>Менделеевская</option>
+<option>Митино</option>
+<option>Молодежная</option>
+<option>Монорельса Выставочный центр</option>
+<option>Монорельса Телецентр</option>
+<option>Монорельса Улица Академика Королева</option>
+<option>Монорельса Улица Милашенкова</option>
+<option>Монорельса Улица Сергея Эйзенштейна</option>
+<option>Монорельсовой дороги Тимирязевская</option>
+<option>Мякинино</option>
+<option>Нагатинская</option>
+<option>Нагорная</option>
+<option>Нахимовский проспект</option>
+<option>Новогиреево</option>
+<option>Новокосино</option>
+<option>Новокузнецкая</option>
+<option>Новослободская</option>
+<option>Новоясеневская</option>
+<option>Новые Черемушки</option>
+<option>Октябрьская</option>
+<option>Октябрьское поле</option>
+<option>Орехово</option>
+<option>Отрадное</option>
+<option>Охотныйряд</option>
+<option>Павелецкая</option>
+<option>Парк культуры</option>
+<option>Парк Победы</option>
+<option>Партизанская</option>
+<option>Первомайская</option>
+<option>Перово</option>
+<option>Петровско-Разумовская</option>
+<option>Печатники</option>
+<option>Пионерская</option>
+<option>Планерная</option>
+<option>Площадь Ильича</option>
+<option>Площадь Революции</option>
+<option>Полежаевская</option>
+<option>Полянка</option>
+<option>Пражская</option>
+<option>Преображенская площадь</option>
+<option>Пролетарская</option>
+<option>Проспект Вернадского</option>
+<option>Проспект Мира</option>
+<option>Профсоюзная</option>
+<option>Пушкинская</option>
+<option>Пятницкое шоссе</option>
+<option>Речной вокзал</option>
+<option>Рижская</option>
+<option>Римская</option>
+<option>Рязанский проспект</option>
+<option>Савеловская</option>
+<option>Свиблово</option>
+<option>Севастопольская</option>
+<option>Семеновская</option>
+<option>Серпуховская</option>
+<option>Славянский бульвар</option>
+<option>Смоленская (Арбатско-Покровская линия)</option>
+<option>Смоленская (Филевская линия)</option>
+<option>Сокол</option>
+<option>Сокольники</option>
+<option>Спартак</option>
+<option>Спортивная</option>
+<option>Сретенский бульвар</option>
+<option>Строгино</option>
+<option>Студенческая</option>
+<option>Сухаревская</option>
+<option>Сходненская</option>
+<option>Таганская</option>
+<option>Тверская</option>
+<option>Театральная</option>
+<option>Текстильщики</option>
+<option>Теплый стан</option>
+<option>Тимирязевская</option>
+<option>Третьяковская</option>
+<option>Тропарево</option>
+<option>Трубная</option>
+<option>Тульская</option>
+<option>Тургеневская</option>
+<option>Тушинская</option>
+<option>Улица Академика Янгеля</option>
+<option>Улица Горчакова</option>
+<option>Улица Скобелевская</option>
+<option>Улица Старокачаловская</option>
+<option>Улица 1905 года</option>
+<option>Университет</option>
+<option>Филевский парк</option>
+<option>Фили</option>
+<option>Фрунзенская</option>
+<option>Царицыно</option>
+<option>Цветной бульвар</option>
+<option>Черкизовская</option>
+<option>Чертановская</option>
+<option>Чеховская</option>
+<option>Чистые пруды</option>
+<option>Чкаловская</option>
+<option>Шаболовская</option>
+<option>Шипиловская</option>
+<option>Шоссе Энтузиастов</option>
+<option>Щелковская</option>
+<option>Щукинская</option>
+<option>Электрозаводская</option>
+<option>Юго-Западная</option>
+<option>Южная</option>
+<option>Ясенево</option>
+                </select>
+                </form>
+            </div>
+            <div>                
+                <p class="phone-header">8 800 <b>800 80 80</b><br><span>Наш оператор всегда на связи</span></p>
+                <a href="#call-yes-id" class="btn two-ff">Заказать звонок</a>
+
+            </div>
+        </div>
+    </div>
+
+<script src="bootstrap.min.js"></script>
+</body>
+</html>
