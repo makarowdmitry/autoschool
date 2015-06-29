@@ -144,6 +144,9 @@ body{
 	color: #fff;
 	font-size: 40px;
 	text-shadow: 1px 1px 1px #000;
+	position:relative;
+	z-index: 999;
+
 }
 
 .offer-text-one p span{
