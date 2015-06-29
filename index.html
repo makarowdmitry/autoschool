@@ -59,7 +59,8 @@
             $(".first-call").addClass('animated zoomIn');
             $(".ford-l").addClass('animated fadeInLeft');
             $(".ford-r").addClass('animated fadeInRight');
-            $(".offer-text-one.two").css({visibility:"hidden"});
+            $(".offer-text-one.two").addClass('animated  flash');
+           
 
             $(".why-block").css({visibility:"hidden"});
 
@@ -82,12 +83,6 @@
             
             var h = $(window).height();
             $(window).scroll(function(){
-                if ( ($(this).scrollTop()+h) >= $(".offer-text-one.two").offset().top) {
-                    $(".offer-text-one.two").css({visibility:"visible"});
-                    $(".offer-text-one.two").eq(0).addClass('animated flash');
-
-                   
-                }
 
                   if ( ($(this).scrollTop()+h) >= $(".why-block").offset().top) {
                     $(".why-block").css({visibility:"visible"});
