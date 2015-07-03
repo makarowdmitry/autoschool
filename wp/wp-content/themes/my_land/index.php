@@ -385,6 +385,43 @@
         while (have_posts()):the_post(); ?><?php the_content();?>
         <? endwhile; endif; wp_reset_query();?>
         </div>
+        
+         <div class="our-inst-one two-m">
+            <img src="<?php if(have_posts()):query_posts('p=125');
+        while (have_posts()):the_post(); ?><?php the_title();?>
+        <? endwhile; endif; wp_reset_query();?>">
+
+          <?php if(have_posts()):query_posts('p=148');
+        while (have_posts()):the_post(); ?><?php the_content();?>
+        <? endwhile; endif; wp_reset_query();?>
+            
+        </div>
+
+
+         <div class="our-inst-one two-m">
+            <img src="<?php if(have_posts()):query_posts('p=127');
+        while (have_posts()):the_post(); ?><?php the_title();?>
+        <? endwhile; endif; wp_reset_query();?>">
+
+          <?php if(have_posts()):query_posts('p=150');
+        while (have_posts()):the_post(); ?><?php the_content();?>
+        <? endwhile; endif; wp_reset_query();?>
+            
+        </div>
+
+
+         <div class="our-inst-one two-m">
+            <img src="<?php if(have_posts()):query_posts('p=129');
+        while (have_posts()):the_post(); ?><?php the_title();?>
+        <? endwhile; endif; wp_reset_query();?>">
+
+          <?php if(have_posts()):query_posts('p=152');
+        while (have_posts()):the_post(); ?><?php the_content();?>
+        <? endwhile; endif; wp_reset_query();?>
+            
+        </div>
+
+
         </div>
         <?php if(have_posts()):query_posts('p=59');
         while (have_posts()):the_post(); ?><?php the_content();?>
@@ -471,6 +508,61 @@
     </div>
 
 
+
+
+        <div>
+        <div class="review1">
+            <div>
+                <img src="<?php if(have_posts()):query_posts('p=119');
+        while (have_posts()):the_post(); ?><?php the_title();?>
+        <? endwhile; endif; wp_reset_query();?>">
+        <?php if(have_posts()):query_posts('p=131');
+        while (have_posts()):the_post(); ?><?php the_content();?>
+        <? endwhile; endif; wp_reset_query();?>
+            </div>
+            <p class="background-carousel">
+                <?php if(have_posts()):query_posts('p=131');
+        while (have_posts()):the_post(); ?><?php the_title();?>
+        <? endwhile; endif; wp_reset_query();?>
+            </p>
+        </div>
+        </div>
+
+        <div>
+            <div class="review1">
+                <div>
+                    <img src="<?php if(have_posts()):query_posts('p=121');
+            while (have_posts()):the_post(); ?><?php the_title();?>
+            <? endwhile; endif; wp_reset_query();?>">
+                      <?php if(have_posts()):query_posts('p=142');
+            while (have_posts()):the_post(); ?><?php the_content();?>
+            <? endwhile; endif; wp_reset_query();?>
+                </div>
+                <p class="background-carousel">
+                    <?php if(have_posts()):query_posts('p=142');
+            while (have_posts()):the_post(); ?><?php the_title();?>
+            <? endwhile; endif; wp_reset_query();?>
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div class="review1">
+                <div>
+                    <img src="<?php if(have_posts()):query_posts('p=123');
+            while (have_posts()):the_post(); ?><?php the_title();?>
+            <? endwhile; endif; wp_reset_query();?>">
+                      <?php if(have_posts()):query_posts('p=144');
+            while (have_posts()):the_post(); ?><?php the_content();?>
+            <? endwhile; endif; wp_reset_query();?>
+                </div>
+                <p class="background-carousel">
+                    <?php if(have_posts()):query_posts('p=144');
+            while (have_posts()):the_post(); ?><?php the_title();?>
+            <? endwhile; endif; wp_reset_query();?>
+                </p>
+            </div>
+        </div>
 
         </div>
             
